@@ -9,14 +9,10 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
   * Protects the server.
 * Added load balancer:
   * Enhances server security.
-* Introduced blockchain:
-  * Manages tokens transparently.
 * Introduced incentives:
   * Increases user participation.
 * Added a store where incentives can be used:
   * Provides a platform for users to utilize their incentives.
-* Added oAuth login method:
-  * Offers a convenient and secure login method.
 * Added a verification system for registered location information:
   * Ensures the accuracy and reliability of location data.
 * Added a navigation system for location information:
@@ -35,6 +31,7 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
 |awm-v2-community-server|Offers a community where users can write, view, and modify posts.|[link](https://github.com/ahr-i/awm-v2-community-server)|
 |awm-v2-chat-server|Provides real-time messaging functionality between users.|[link](https://github.com/ahr-i/awm-v2-chat-server)|
 |awm-v2-store-server|Handles the registration of items sold in the store and the processing of purchases.|[link](https://github.com/ahr-i/awm-v2-store-server)|
+|awm-v2-user-manager|Performs functions related to the user, such as user profile and friend search features.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
 |awm-v2-token-manager|Connects to the blockchain and provides APIs related to payment processing.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
 |awm-v2-blockchain|Manages token history and smart contracts.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
 |awm-v2-database|We use a MySQL database. The table structure is documented.|[link](https://github.com/ahr-i/awm-v2-database)|
