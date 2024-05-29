@@ -19,6 +19,8 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
   * 사용자가 특정 위치로 쉽게 이동할 수 있도록 돕습니다.
 * 이미지 처리:
   * 지능형 이미지 처리 및 분석으로 비즈니스를 강화합니다.
+* 실시간 알람 기능:
+  * 유저와 1대1로 연결되어, 실시간으로 알람을 보냅니다.
 
 ## 1. 저장소 분류
 |저장소|설명|URL|
@@ -32,6 +34,7 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
 |awm-v2-chat-server|사용자 간의 실시간 메시징 기능을 제공합니다.|[link](https://github.com/ahr-i/awm-v2-chat-server)|
 |awm-v2-store-server|상점에서 판매되는 아이템의 등록과 구매 처리를 담당합니다.|[link](https://github.com/ahr-i/awm-v2-store-server)|
 |awm-v2-user-manager|유저의 프로필, 친구 찾기 기능 등 유저와 관련된 기능을 수행합니다.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
+|awm-v2-alarm-server|유저에게 실시간으로 알람을 보내는 기능을 담당합니다.|[link](https://github.com/ahr-i/awm-v2-alarm-server)|
 |awm-v2-token-manager|블록체인에 연결되어 결제 처리와 관련된 API를 제공합니다.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
 |awm-v2-blockchain|토큰 히스토리와 스마트 계약을 관리합니다.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
 |awm-v2-database|MySQL 데이터베이스를 사용합니다. 테이블 구조가 문서화되어 있습니다.|[link](https://github.com/ahr-i/awm-v2-database)|
@@ -44,8 +47,7 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
 |Capstone Design Project|#2|Any Where Map|공개|
 
 ### 2.1 아키텍처
-![msa_architecture](./doc/file/image/readme_2_1.png)
-![msa_service](./doc/file/image/readme_2_1_1.png)
+![msa_architecture](./doc/file/image/readme2_2_1.png)
 
 ## 3. 프로젝트 브리프
 

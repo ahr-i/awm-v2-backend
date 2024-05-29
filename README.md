@@ -19,6 +19,8 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
   * Facilitates user navigation to specific locations.
 * Image processing:
   * Empowering your business with intelligent image processing and analysis.
+* Real-time Alert Function:
+  * Connects one-on-one with users to send real-time alerts.
 
 ## 1. Repository Classification
 |Repository|Description|URL|
@@ -32,6 +34,7 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
 |awm-v2-chat-server|Provides real-time messaging functionality between users.|[link](https://github.com/ahr-i/awm-v2-chat-server)|
 |awm-v2-store-server|Handles the registration of items sold in the store and the processing of purchases.|[link](https://github.com/ahr-i/awm-v2-store-server)|
 |awm-v2-user-manager|Performs functions related to the user, such as user profile and friend search features.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
+|awm-v2-alarm-server|Responsible for sending real-time alerts to users.|[link](https://github.com/ahr-i/awm-v2-alarm-server)|
 |awm-v2-token-manager|Connects to the blockchain and provides APIs related to payment processing.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
 |awm-v2-blockchain|Manages token history and smart contracts.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
 |awm-v2-database|We use a MySQL database. The table structure is documented.|[link](https://github.com/ahr-i/awm-v2-database)|
@@ -44,8 +47,7 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
 |Capstone Design Project|#2|Any Where Map|Public|
 
 ### 2.1 Architecture
-![msa_architecture](./doc/file/image/readme_2_1.png)
-![msa_service](./doc/file/image/readme_2_1_1.png)
+![msa_architecture](./doc/file/image/readme2_2_1.png)
 
 ## 3. Project Brief
 
