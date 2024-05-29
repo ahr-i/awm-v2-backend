@@ -9,14 +9,10 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
   * 외부로 부터 Gateway를 보호합니다.
 * 로드 밸런서 추가:
   * 로드 밸런서를 통해 서버의 보안과 확장성, 처리 속도를 올릴 수 있습니다.
-* 블록체인 도입:
-  * 토큰을 투명하게 관리합니다.
 * 인센티브 도입:
   * 인센티브 시스템을 통해 사용자 참여를 증가시킵니다.
 * 인센티브를 사용할 수 있는 스토어 추가:
   * 사용자가 인센티브를 활용할 수 있는 플랫폼을 제공합니다.
-* oAuth 로그인 방식 추가:
-  * 편리하고 안전한 로그인 방법을 제공합니다.
 * 등록된 위치 정보에 대한 검증 시스템 추가:
   * 위치 데이터의 정확성과 신뢰성을 보장합니다.
 * 위치 정보에 대한 내비게이션 시스템 추가:
@@ -35,6 +31,7 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
 |awm-v2-community-server|사용자가 글을 작성하고, 보고, 수정할 수 있는 커뮤니티를 제공합니다.|[link](https://github.com/ahr-i/awm-v2-community-server)|
 |awm-v2-chat-server|사용자 간의 실시간 메시징 기능을 제공합니다.|[link](https://github.com/ahr-i/awm-v2-chat-server)|
 |awm-v2-store-server|상점에서 판매되는 아이템의 등록과 구매 처리를 담당합니다.|[link](https://github.com/ahr-i/awm-v2-store-server)|
+|awm-v2-user-manager|유저의 프로필, 친구 찾기 기능 등 유저와 관련된 기능을 수행합니다.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
 |awm-v2-token-manager|블록체인에 연결되어 결제 처리와 관련된 API를 제공합니다.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
 |awm-v2-blockchain|토큰 히스토리와 스마트 계약을 관리합니다.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
 |awm-v2-database|MySQL 데이터베이스를 사용합니다. 테이블 구조가 문서화되어 있습니다.|[link](https://github.com/ahr-i/awm-v2-database)|
