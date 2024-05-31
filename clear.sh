@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker stop awm-v2-monitor
-docker stop awm-v2-authentication_server
+docker stop awm-v2-authentication-server
 docker stop awm-v2-location_manager
 #docker stop awm-v2-image-processing_server
 docker stop awm-v2-community_server
