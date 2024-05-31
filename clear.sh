@@ -2,12 +2,12 @@
 
 docker stop awm-v2-monitor
 docker stop awm-v2-authentication-server
-docker stop awm-v2-location_manager
-#docker stop awm-v2-image-processing_server
-docker stop awm-v2-community_server
-docker stop awm-v2-chat_server
-docker stop awm-v2-user_manager
-#docker stop awm-v2-alarm_server
-#docker stop awm-v2-store_server
-#docker stop awm-v2-token_manager
+docker stop awm-v2-location-manager
+#docker stop awm-v2-image-processing-server
+docker stop awm-v2-community-server
+docker stop awm-v2-chat-server
+docker stop awm-v2-user-manager
+#docker stop awm-v2-alarm-server
+#docker stop awm-v2-store-server
+#docker stop awm-v2-token-manager
 docker stop awm-v2-gateway
