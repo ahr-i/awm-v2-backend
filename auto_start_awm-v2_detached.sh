@@ -62,6 +62,6 @@ bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-user-
 
 # Start - Gateway
 cd ../awm-v2-gateway || error_exit "Error: Failed to change directory to 'awm-v2-gateway'."
-bash quick_start.sh || error_exit "Error: Failed to start 'awm-v2-gateway'."
+bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-gateway'."
 
 echo "AWM-v2 server started successfully."
