@@ -20,7 +20,7 @@ function error_exit {
 }
 
 # Setting
-mkdir awm-v2
+mkdir awm-v2 || { rm -rf awm-v2; mkdir awm-v2; }
 cd awm-v2 || error_exit "Error: Failed to change directory to 'awm-v2'."
 
 # Download
