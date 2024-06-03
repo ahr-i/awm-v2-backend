@@ -4,7 +4,7 @@
 MONITOR="https://github.com/ahr-i/awm-v2-monitor.git"
 AUTHENTICATION_SERVER="https://github.com/ahr-i/awm-v2-authentication-server.git"
 LOCATION_MANAGER="https://github.com/ahr-i/awm-v2-location-manager.git"
-#IMAGE_PROCESSING_SERVER="https://github.com/ahr-i/awm-v2-image-processing-server.git"
+IMAGE_PROCESSING_SERVER="https://github.com/ahr-i/awm-v2-image-processing-server.git"
 COMMUNITY_SERVER="https://github.com/ahr-i/awm-v2-community-server.git"
 CHAT_SERVER="https://github.com/ahr-i/awm-v2-chat-server.git"
 USER_MANAGER="https://github.com/ahr-i/awm-v2-user-manager.git"
@@ -27,7 +27,7 @@ cd awm-v2 || error_exit "Error: Failed to change directory to 'awm-v2'."
 git clone $MONITOR || error_exit "Error: Failed to clone '$MONITOR'."
 git clone $AUTHENTICATION_SERVER || error_exit "Error: Failed to clone '$AUTHENTICATION_SERVER'."
 git clone $LOCATION_MANAGER || error_exit "Error: Failed to clone '$LOCATION_MANAGER'."
-#git clone $IMAGE_PROCESSING_SERVER
+git clone $IMAGE_PROCESSING_SERVER || error_exit "Error: Failed to clone '$IMAGE_PROCESSING_SERVER'."
 git clone $COMMUNITY_SERVER || error_exit "Error: Failed to clone '$COMMUNITY_SERVER'."
 git clone $CHAT_SERVER || error_exit "Error: Failed to clone '$CHAT_SERVER'."
 git clone $USER_MANAGER || error_exit "Error: Failed to clone '$USER_MANAGER'."
@@ -47,6 +47,10 @@ bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-authe
 # Start - Location Manager
 cd ../awm-v2-location-manager || error_exit "Error: Failed to change directory to 'awm-v2-location-manager'."
 bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-location-manager'."
+
+# Start - Image Processing Server
+cd ../awm-v2-image-processing-server || error_exit "Error: Failed to change directory to 'awm-v2-image-processing-server'."
+bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-image-processing-server'."
 
 # Start - Community Server
 cd ../awm-v2-community-server || error_exit "Error: Failed to change directory to 'awm-v2-community-server'."
