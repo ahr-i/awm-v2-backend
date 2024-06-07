@@ -8,7 +8,7 @@ IMAGE_PROCESSING_SERVER="https://github.com/ahr-i/awm-v2-image-processing-server
 COMMUNITY_SERVER="https://github.com/ahr-i/awm-v2-community-server.git"
 CHAT_SERVER="https://github.com/ahr-i/awm-v2-chat-server.git"
 USER_MANAGER="https://github.com/ahr-i/awm-v2-user-manager.git"
-#ALARM_SERVER="https://github.com/ahr-i/awm-v2-alarm-server.git"
+ALARM_SERVER="https://github.com/ahr-i/awm-v2-alarm-server.git"
 #STORE_SERVER="https://github.com/ahr-i/awm-v2-store-server.git"
 #TOKEN_MANAGER="https://github.com/ahr-i/awm-v2-token-manager.git"
 GATEWAY="https://github.com/ahr-i/awm-v2-gateway.git"
@@ -31,7 +31,7 @@ git clone $IMAGE_PROCESSING_SERVER || error_exit "Error: Failed to clone '$IMAGE
 git clone $COMMUNITY_SERVER || error_exit "Error: Failed to clone '$COMMUNITY_SERVER'."
 git clone $CHAT_SERVER || error_exit "Error: Failed to clone '$CHAT_SERVER'."
 git clone $USER_MANAGER || error_exit "Error: Failed to clone '$USER_MANAGER'."
-#git clone $ALARM_SERVER
+git clone $ALARM_SERVER || error_exit "Error: Failed to clone '$ALARM_SERVER'."
 #git clone $STORE_SERVER
 #git clone $TOKEN_MANAGER
 git clone $GATEWAY || error_exit "Error: Failed to clone '$GATEWAY'."
@@ -63,6 +63,10 @@ bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-chat-
 # Start - User Manager
 cd ../awm-v2-user-manager || error_exit "Error: Failed to change directory to 'awm-v2-user-manager'."
 bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-user-manager'."
+
+# Start - Alarm Server
+cd ../awm-v2-alarm-server || error_exit "Error: Failed to change directory to 'awm-v2-alarm-server'."
+bash quick_start_detached.sh || error_exit "Error: Failed to start 'awm-v2-alarm-server'."
 
 # Start - Gateway
 cd ../awm-v2-gateway || error_exit "Error: Failed to change directory to 'awm-v2-gateway'."
