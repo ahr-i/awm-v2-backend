@@ -1,7 +1,27 @@
-# Capstone Design Project / Any Where Map
+# Capstone Design Project / Anywhere Map
 이 저장소는 AWM v2의 메타 저장소입니다.
 
-## 0. AWM v2 Major Updates
+## 0. 소개
+누구나 지도에 장소를 등록하고, 검증할 수 있는 지도입니다.   
+기존의 중앙집중식으로 위치가 관리되던 지도와 달리 사용자 기반의 알고리즘을 활용하여 누구나 쉽게 기여를 할 수 있습니다.   
+각각의 장소에는 커뮤니티와 실시간 채팅기능이 있으며, 자세한 정보를 얻거나 토론 등이 가능합니다.   
+이 외에도 날씨 정보, 유저 클러스터링 등의 부가 기능을 제공합니다.   
+데모 영상: [LINL](https://www.youtube.com/watch?v=ja8XFNCLJ1U)
+
+## 1. 시작
+아래의 명령어를 사용하여 시작합니다.
+```
+bash auto_start_awm-v2.sh
+```
+만약 권한 문제가 발생한다면 'sudo' 키워드를 붙여야 합니다.
+
+만약 실행중인 모든 서비스를 지우고 싶다면 아래의 명령어를 사용합니다.
+```
+bash clear.sh
+```
+마찬가지로 권한 문제가 발생한다면 'sudo' 키워드를 붙여야 합니다.
+
+## 2. AWM v2 Major Updates
 AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업그레이드 버전입니다:
 * MSA 아키텍처 채택:
   * 확장성과 높은 장애 허용도를 제공합니다.
@@ -22,10 +42,9 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
 * 실시간 알람 기능:
   * 유저와 1대1로 연결되어, 실시간으로 알람을 보냅니다.
 
-## 1. 저장소 분류
+## 3. 저장소 분류
 |저장소|설명|URL|
 |:---|:---|:---|
-|awm-v2-proxy|외부 접근으로부터 게이트웨이를 보호합니다.|[link](https://github.com/ahr-i/awm-v2-proxy)|
 |awm-v2-gateway|클라이언트의 초기 접점 역할을 합니다.|[link](https://github.com/ahr-i/awm-v2-gateway)|
 |awm-v2-authentication-server|클라이언트 인증을 처리하고 JWT 토큰을 발급하거나 검증합니다.|[link](https://github.com/ahr-i/awm-v2-authentication-server)|
 |awm-v2-location-manager|장소에 대한 조회, 등록, 수정 정보 기능을 제공합니다.|[link](https://github.com/ahr-i/awm-v2-location-manager)|
@@ -35,45 +54,42 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
 |awm-v2-store-server|상점에서 판매되는 아이템의 등록과 구매 처리를 담당합니다.|[link](https://github.com/ahr-i/awm-v2-store-server)|
 |awm-v2-user-manager|유저의 프로필, 친구 찾기 기능 등 유저와 관련된 기능을 수행합니다.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
 |awm-v2-alarm-server|유저에게 실시간으로 알람을 보내는 기능을 담당합니다.|[link](https://github.com/ahr-i/awm-v2-alarm-server)|
-|awm-v2-token-manager|블록체인에 연결되어 결제 처리와 관련된 API를 제공합니다.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
-|awm-v2-blockchain|토큰 히스토리와 스마트 계약을 관리합니다.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
-|awm-v2-database|MySQL 데이터베이스를 사용합니다. 테이블 구조가 문서화되어 있습니다.|[link](https://github.com/ahr-i/awm-v2-database)|
 |awm-v2-monitor|전체 시스템의 상태를 모니터링할 수 있습니다.|[link](https://github.com/ahr-i/awm-v2-monitor)|
 |awm-v1-backend|AWM v1 입니다. 모놀리식 아키텍처를 사용하여 구현되었습니다.|[link](https://github.com/ahr-i/awm-v1-backend)|
 
-## 2. 프로젝트 정보
+## 4. 프로젝트 정보
 |카테고리|프로젝트 ID|프로젝트 이름|공개범위|
 |:---:|:---:|:---:|:---:|
-|Capstone Design Project|#2|Any Where Map|공개|
+|Capstone Design Project|#2|Anywhere Map|공개|
 
-### 2.1 아키텍처
+### 4.1 아키텍처
 ![msa_architecture](./doc/file/image/readme2_2_1.png)
 
-## 3. 프로젝트 브리프
+## 5. 프로젝트 브리프
 
-### 3.1 목적
+### 5.1 목적
 1. 유저에게 필요한 시설의 위치 정보를 제공.
 2. 일반 지도에 표시되지 않는 위치 정보 표시.
 3. 유저간 소통으로 빠른 위치 정보 실시간 업데이트.
 
-### 3.2 기대 효과
+### 5.2 기대 효과
 1. 단순히 필수 위치 정보만 보여주는 것이 아닌 유저간 장소 공유 기능을 이용하여 기존의 지도로는 알 수 없었던 위치 정보를 알 수 있음.
 2. 방대한 양의 데이터가 있는 지도를 유저의 편의에 맞게 커스텀 기능을 사용하여 필요한 정보만 필터링하여 볼 수 있음.
 3. 유저가 직접적으로 특정 시설의 정보를 수정할 수 있게 함으로써 장소에 대한 정보가 실시간으로 갱신됨.
 
-### 3.3 핵심 타겟
+### 5.3 핵심 타겟
 1. 10대 ~ 40대 유저
 
-### 3.4 사용 형식
+### 5.4 사용 형식
 1. 모바일 앱
 
-### 3.5 수행 조건
+### 5.5 수행 조건
 1. 프로그램 및 클라우드 DB 설계.
 2. 테스트를 위한 테스트 환경 구축.
 3. 화면 구성 중 설정과 고객센터는 4뎁스 이하로 한다.
 4. 화면 구성 중 설정과 고객센터를 제외한 화면은 3뎁스 이하로 한다.
 
-### 3.6 기능
+### 5.6 기능
 * 장소 공유 기능
   * 유저 간 장소에 대한 정보 실시간 공유.
   * 장소에 대해 사진으로 추가 설명 가능.
@@ -96,7 +112,7 @@ AWM v2는 다음과 같은 주요 변경 사항을 포함하며, AWM v1의 업�
   * 거리 및 경로, 시간 표시.
   * 주변시설 표시.
 
-## 4. 문서
+## 6. 문서
 <a href="https://docs.google.com/spreadsheets/d/1nEh904hfjWP3kfXu41WGr4Z9NcRg2JVtGt0FnFGhD2U/edit#gid=0" target="_blank">
   <img src="https://img.shields.io/badge/SRS-34A853?style=flat-square&logo=googlesheets&logoColor=FFFFFF"/>
 </a>

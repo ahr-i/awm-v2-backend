@@ -1,7 +1,27 @@
-# Capstone Design Project / Any Where Map
+# Capstone Design Project / Anywhere Map
 This repository is the meta repository for AWM v2.
 
-## 0. AWM v2 Major Updates
+## 0. Introduction
+This is a map where anyone can register and verify locations.   
+Unlike traditional centrally managed maps, this map uses user-based algorithms, allowing everyone to contribute easily.   
+Each location features a community and real-time chat function, enabling users to get detailed information or engage in discussions.   
+Additionally, it offers extra features like weather information and user clustering.   
+Demo video: [LINK](https://www.youtube.com/watch?v=ja8XFNCLJ1U)
+
+## 1. Getting Started
+Start with the following command:
+```
+bash auto_start_awm-v2.sh
+```
+If there are permission issues, add the 'sudo' keyword.
+
+If you want to remove all running services, use the following command:
+```
+bash clear.sh
+```
+Similarly, if there are permission issues, add the 'sudo' keyword.
+
+## 2. AWM v2 Major Updates
 AWM v2 is an upgraded version of AWM v1 with the following major changes:
 * Adopted MSA architecture:
   * Provides scalability and high fault tolerance.
@@ -22,10 +42,9 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
 * Real-time Alert Function:
   * Connects one-on-one with users to send real-time alerts.
 
-## 1. Repository Classification
+## 3. Repository Classification
 |Repository|Description|URL|
 |:---|:---|:---|
-|awm-v2-proxy|Protects the gateway from external access.|[link](https://github.com/ahr-i/awm-v2-proxy)|
 |awm-v2-gateway|Serves as the initial point of contact for clients.|[link](https://github.com/ahr-i/awm-v2-gateway)|
 |awm-v2-authentication-server|Handles client authentication and issues or validates JWT tokens.|[link](https://github.com/ahr-i/awm-v2-authentication-server)|
 |awm-v2-location-manager|Provides functions for querying, registering, and modifying information about places.|[link](https://github.com/ahr-i/awm-v2-location-manager)|
@@ -35,45 +54,42 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
 |awm-v2-store-server|Handles the registration of items sold in the store and the processing of purchases.|[link](https://github.com/ahr-i/awm-v2-store-server)|
 |awm-v2-user-manager|Performs functions related to the user, such as user profile and friend search features.|[link](https://github.com/ahr-i/awm-v2-user-manager)|
 |awm-v2-alarm-server|Responsible for sending real-time alerts to users.|[link](https://github.com/ahr-i/awm-v2-alarm-server)|
-|awm-v2-token-manager|Connects to the blockchain and provides APIs related to payment processing.|[link](https://github.com/ahr-i/awm-v2-token-manager)|
-|awm-v2-blockchain|Manages token history and smart contracts.|[link](https://github.com/ahr-i/awm-v2-blockchain)|
-|awm-v2-database|We use a MySQL database. The table structure is documented.|[link](https://github.com/ahr-i/awm-v2-database)|
 |awm-v2-monitor|Allows you to monitor the status of the entire system.|[link](https://github.com/ahr-i/awm-v2-monitor)|
 |awm-v1-backend|This is version 1 of the AWM. It is implemented using a monolithic architecture.|[link](https://github.com/ahr-i/awm-v1-backend)|
 
-## 2. Project Infomation
+## 4. Project Infomation
 |Category|Project ID|Project Name|Disclosure Scope|
 |:---:|:---:|:---:|:---:|
-|Capstone Design Project|#2|Any Where Map|Public|
+|Capstone Design Project|#2|Anywhere Map|Public|
 
-### 2.1 Architecture
+### 4.1 Architecture
 ![msa_architecture](./doc/file/image/readme2_2_1.png)
 
-## 3. Project Brief
+## 5. Project Brief
 
-### 3.1 Purpose
+### 5.1 Purpose
 1. Provide users with the location information of necessary facilities.
 2. Display location information not shown on standard maps.
 3. Real-time location information updates through user communication.
 
-### 3.2 Expected Effect
+### 5.2 Expected Effect
 1. Not only does it show essential location information, but users can also know location information that couldn't be known with existing maps through a place sharing feature among users.
 2. With the map containing a vast amount of data, users can filter and view only the necessary information using the custom feature for their convenience.
 3. By allowing users to directly modify information about a specific facility, information about the place is updated in real-time.
 
-### 3.3 Core Target
+### 5.3 Core Target
 1. Users in their 10s to 40s
 
-### 3.4 Format
+### 5.4 Format
 1. Mobile Application
 
-### 3.5 Condition
+### 5.5 Condition
 1. Design of the program and cloud DB.
 2. Set up a test environment for testing.
 3. In screen configuration, the settings and customer center should be kept to 4 depths or less.
 4. Excluding the settings and customer center in screen configuration, other screens should be kept to 3 depths or less.
 
-### 3.6 Function
+### 5.6 Function
 * Place Sharing Feature
   * Real-time sharing of information about places among users.
   * Ability to provide additional explanations about places using photos.
@@ -96,7 +112,7 @@ AWM v2 is an upgraded version of AWM v1 with the following major changes:
   * Display of distance, route, and time.
   * Display of nearby facilities.
 
-## 4 Document
+## 6 Document
 <a href="https://docs.google.com/spreadsheets/d/1nEh904hfjWP3kfXu41WGr4Z9NcRg2JVtGt0FnFGhD2U/edit#gid=0" target="_blank">
   <img src="https://img.shields.io/badge/SRS-34A853?style=flat-square&logo=googlesheets&logoColor=FFFFFF"/>
 </a>
